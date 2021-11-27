@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as _ from 'lodash';
+import {NavBar} from './components';
 
 import {Route, 
         Link, 
@@ -26,6 +27,16 @@ function App() {
       //     Learn React
       //   </a>
       // </header> */}
+
+      <div className="NavBar">
+          <NavBar></NavBar>
+      </div>
+      <div className="Main">
+
+      </div> 
+      <div className="Footer">
+
+      </div> 
 
     </div>
   );
