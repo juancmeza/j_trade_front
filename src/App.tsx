@@ -2,11 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as _ from 'lodash';
-import {NavBar} from './components';
+import { NavBar } from './components';
+import Switch from 'react-router';
 
 import {Route, 
         Link, 
-        Switch,   
         BrowserRouter as Router,
 } from 'react-router-dom';
 

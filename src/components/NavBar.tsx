@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "reactjs-navbar";
 import Loader from "react-loader-spinner";
-import Link from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import {
   faHome,
