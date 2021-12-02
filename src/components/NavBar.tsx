@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from "reactjs-navbar";
 import Loader from "react-loader-spinner";
 import {Link} from 'react-router-dom';
+import { Button, Menu, Typography, Avatar } from '@mui/material';
 
 import {
   faHome,
@@ -10,12 +10,12 @@ import {
   faHammer,
   faEnvelopeOpen,
 } from "@fortawesome/free-solid-svg-icons";
-import "reactjs-navbar/dist/index.css";
 
 const NavBar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
+                <Avatar />
                 <Link to="/"></Link>
             </div>
         </div>

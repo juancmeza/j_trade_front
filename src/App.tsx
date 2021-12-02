@@ -32,7 +32,7 @@ function App() {
           <NavBar></NavBar>
       </div>
       <div className="Main">
-
+        <div>Main</div>
       </div> 
       <div className="Footer">
 
