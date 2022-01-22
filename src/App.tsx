@@ -1,40 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import * as _ from 'lodash';
-import { NavBar } from './components';
-import Switch from 'react-router';
+import { NavBar, Homepage, Cryptocurrencies, Exchanges, CryptoDetails, Portfolio, News } from './components';
+// import Switch from 'react-router';
 
 import {Route, 
-        Link, 
+        Link,
+        Routes, 
         BrowserRouter as Router,
 } from 'react-router-dom';
 
+import { Layout, Typography, Space} from 'antd';
+
 function App() {
   return (
-    <div className="App">
-      {/* // <header className="App-header">
-      //   <img src={logo} className="App-logo" alt="logo" />
-      //   <p>
-      //     Edit <code>src/App.tsx</code> and save to reload.
-      //   </p>
-      //   <a
-      //     className="App-link"
-      //     href="https://reactjs.org"
-      //     target="_blank"
-      //     rel="noopener noreferrer"
-      //   >
-      //     Learn React
-      //   </a>
-      // </header> */}
+    <div className="app">
+      
 
-      <div className="NavBar">
+      <div className="navbar">
           <NavBar></NavBar>
       </div>
-      <div className="Main">
-        <div>Main</div>
+      <div className="main">
+
       </div> 
-      <div className="Footer">
+      <div className="footer">
 
       </div> 
 
