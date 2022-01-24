@@ -5,9 +5,8 @@ import { NavBar, Homepage, Cryptocurrencies, Exchanges, CryptoDetails, Portfolio
 // import Switch from 'react-router';
 
 import {Route, 
-        Link,
-        Routes, 
-        BrowserRouter as Router,
+        Switch,
+        Link, 
 } from 'react-router-dom';
 
 import { Layout, Typography, Space} from 'antd';
@@ -15,13 +14,31 @@ import { Layout, Typography, Space} from 'antd';
 function App() {
   return (
     <div className="app">
-      
-
       <div className="navbar">
           <NavBar></NavBar>
       </div>
       <div className="main">
-
+      <Layout>
+        <div className="routes">
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Route exact path="/exchanges">
+              <Exchanges />
+            </Route>
+            <Route exact path="/cryptocurrencies">
+              <Cryptocurrencies />
+            </Route>
+            <Route exact path="/crypto/:coinId">
+              <CryptoDetails />
+            </Route>
+            <Route exact path="/news">
+              <News />
+            </Route>
+          </Switch>
+        </div>
+      </Layout>
       </div> 
       <div className="footer">
 
